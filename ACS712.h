@@ -40,7 +40,7 @@ class ACS712
     //  5A        185.0
     //  20A       100.0
     //  30A        66.0
-    ACS712(uint8_t analogPin, float volts = 5.0, uint16_t maxADC = 1023, float mVperAmpere = 100);
+    ACS712(uint8_t analogPin, float volts = 5.0, uint16_t maxADC = 1023, float mVperAmpere = 185);
 
    //   returns mA peak2peak current.
    float mA_peak2peak(float frequency = ACS712_DEFAULT_FREQ, uint16_t cycles = 1);
